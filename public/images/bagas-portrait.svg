@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <defs>
+    <linearGradient id="suitGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1c6a7"/>
+      <stop offset="100%" stop-color="#d49e7a"/>
+    </linearGradient>
+    <linearGradient id="rimLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Shoulders & Tech Hoodie -->
+  <path d="M55 600 C65 445, 135 390, 250 390 C365 390, 435 445, 445 600 Z" fill="url(#suitGrad)" stroke="#334155" stroke-width="3"/>
+  <!-- Hoodie collar & drawstrings -->
+  <path d="M165 395 L250 475 L335 395" fill="#0f172a" stroke="#475569" stroke-width="3"/>
+  <path d="M210 435 L205 535" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M290 435 L295 535" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Subtle cyan rim highlight on shoulder -->
+  <path d="M62 590 C75 455, 140 400, 220 395" fill="none" stroke="url(#rimLight)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="212" y="315" width="76" height="95" rx="28" fill="#c9916d"/>
+  <path d="M212 340 Q250 375 288 340" fill="#b07956" opacity="0.5"/>
+  <!-- Ears -->
+  <ellipse cx="152" cy="245" rx="18" ry="30" fill="#d49e7a"/>
+  <ellipse cx="348" cy="245" rx="18" ry="30" fill="#d49e7a"/>
+  <!-- Head / Face -->
+  <path d="M158 175 C158 105, 342 105, 342 175 L340 255 C340 322, 285 360, 250 360 C215 360, 160 322, 160 255 Z" fill="url(#skinGrad)"/>
+  <!-- Stylish Modern Hair -->
+  <path d="M148 210 C138 140, 165 78, 250 75 C338 75, 362 135, 352 210 C346 175, 330 148, 305 140 C280 132, 265 152, 235 148 C195 144, 165 162, 148 210 Z" fill="#0f172a"/>
+  <path d="M180 88 C220 65, 290 68, 325 98" fill="none" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+  <!-- Eyebrows -->
+  <path d="M185 205 Q210 195 232 204" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M268 204 Q290 195 315 205" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <!-- Modern Developer Glasses -->
+  <rect x="176" y="212" width="62" height="40" rx="10" fill="#0f172a" fill-opacity="0.18" stroke="#1e293b" stroke-width="5"/>
+  <rect x="262" y="212" width="62" height="40" rx="10" fill="#0f172a" fill-opacity="0.18" stroke="#1e293b" stroke-width="5"/>
+  <line x1="238" y1="228" x2="262" y2="228" stroke="#1e293b" stroke-width="5"/>
+  <line x1="156" y1="226" x2="176" y2="228" stroke="#1e293b" stroke-width="4"/>
+  <line x1="324" y1="228" x2="344" y2="226" stroke="#1e293b" stroke-width="4"/>
+  <!-- Eyes -->
+  <circle cx="207" cy="232" r="7" fill="#0f172a"/>
+  <circle cx="293" cy="232" r="7" fill="#0f172a"/>
+  <circle cx="209" cy="230" r="2.5" fill="#ffffff"/>
+  <circle cx="295" cy="230" r="2.5" fill="#ffffff"/>
+  <!-- Lens cyan reflection -->
+  <line x1="184" y1="244" x2="202" y2="218" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="270" y1="244" x2="288" y2="218" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Nose -->
+  <path d="M250 230 L246 272 Q252 278 260 272" fill="none" stroke="#b57c58" stroke-width="4" stroke-linecap="round"/>
+  <!-- Confident Smile -->
+  <path d="M222 302 Q250 320 278 302" fill="none" stroke="#7c4728" stroke-width="5" stroke-linecap="round"/>
+</svg>
