@@ -8,6 +8,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/project/{slug}', [PortfolioController::class, 'showProject'])->name('portfolio.project.show');
 
+// Health & Ping JSON Endpoint
+Route::get('/ping', function () {
+    return response()->json([
+        'status' => 'Bagas.Dev is Alive!',
+        'laravel_version' => app()->version(),
+        'php_version' => PHP_VERSION,
+        'server_time' => now()->timezone('Asia/Jakarta')->toIso8601String(),
+    ]);
+})->name('portfolio.ping');
+
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'Bagas.Dev is Alive!',
+        'laravel_version' => app()->version(),
+        'php_version' => PHP_VERSION,
+        'server_time' => now()->timezone('Asia/Jakarta')->toIso8601String(),
+    ]);
+})->name('portfolio.health');
+
 Route::post('/contact', [PortfolioController::class, 'storeContact'])
     ->middleware('throttle:10,1')
     ->name('portfolio.contact.store');
