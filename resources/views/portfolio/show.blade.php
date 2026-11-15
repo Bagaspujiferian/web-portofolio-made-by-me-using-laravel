@@ -234,5 +234,29 @@
             </p>
         </footer>
     </main>
+
+    <!-- Recruiter & Developer Console Easter Egg (Inspect Element > Console) -->
+    <script>
+        (function () {
+            const asciiArt = [
+                " ____    _    ____    _    ____    ____  _____ __     __",
+                "| __ )  / \\  / ___|  / \\  / ___|  |  _ \\| ____|\\ \\   / /",
+                "|  _ \\ / _ \\| |  _  / _ \\ \\___ \\  | | | |  _|   \\ \\ / / ",
+                "| |_) / ___ \\ |_| |/ ___ \\ ___) |_| |_| | |___   \\ V /  ",
+                "|____/_/   \\_\\____/_/   \\_\\____/(_)____/|_____|   \\_/   "
+            ].join("\n");
+
+            console.log(
+                "%c" + asciiArt,
+                "color: #38bdf8; font-family: 'JetBrains Mono', monospace; font-weight: bold; font-size: 12px; line-height: 1.25; text-shadow: 0 0 10px rgba(56,189,248,0.5);"
+            );
+
+            console.log(
+                "%c 🚀 Hire me! I built this with Laravel 13 & TiDB %c ✨ Bagas Puji Ferian ",
+                "background: linear-gradient(90deg, #2563eb, #06b6d4); color: #ffffff; font-weight: 800; font-size: 13px; padding: 6px 12px; border-radius: 8px 0 0 8px;",
+                "background: #0f172a; color: #38bdf8; font-weight: 700; font-size: 13px; padding: 6px 12px; border: 1px solid #38bdf8; border-radius: 0 8px 8px 0;"
+            );
+        })();
+    </script>
 </body>
 </html>
