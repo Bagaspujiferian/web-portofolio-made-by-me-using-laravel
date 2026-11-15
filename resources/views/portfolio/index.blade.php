@@ -1171,7 +1171,7 @@
                 <span>Bagas.dev</span>
             </div>
             <p class="text-xs text-slate-400">
-                © 2026 BagasDev. All rights reserved.
+                © {{ date('Y') }} BagasDev. All rights reserved.
             </p>
         </footer>
     </main>
