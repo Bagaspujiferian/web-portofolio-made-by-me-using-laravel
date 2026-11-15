@@ -33,7 +33,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Carbon::setLocale('id');
 
-        if ($this->app->environment('production')) {
+        // Paksa HTTPS ketat kalau terdeteksi lagi jalan di mesin Vercel
+        if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL']) || env('VERCEL') || $this->app->environment('production')) {
             URL::forceScheme('https');
         }
     }
